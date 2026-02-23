@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-100">
+    <main class="flex flex-col gap-8 container mx-auto py-12">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-4xl font-bold">Job Application Tracker</h1>
+        <div class="flex gap-5">
+          <div
+            class="card card-dash bg-base-100 w-full border border-slate-200"
+          >
+            <div class="card-body">
+              <h2 class="card-title font-normal text-md">Total</h2>
+              <p class="font-bold text-3xl">8</p>
+            </div>
+          </div>
+          <div
+            class="card card-dash bg-base-100 w-full border border-slate-200"
+          >
+            <div class="card-body">
+              <h2 class="card-title font-normal text-md">Interview</h2>
+              <p class="font-bold text-3xl text-green-400">8</p>
+            </div>
+          </div>
+          <div
+            class="card card-dash bg-base-100 w-full border border-slate-200"
+          >
+            <div class="card-body">
+              <h2 class="card-title font-normal text-md">Rejected</h2>
+              <p class="font-bold text-3xl text-red-400">8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="opacity-10" />
+      <div class="flex flex-col gap-6">
+        <h1 class="text-2xl font-semibold">Available Jobs</h1>
+        <div class="tabs tabs-box bg-transparent shadow-none">
+          <input
+            type="radio"
+            name="my_tabs_6"
+            class="tab shadow-none border border-slate-200"
+            aria-label="Tab 1"
+            checked="checked"
+          />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            Tab content 1
+          </div>
+
+          <input type="radio" name="my_tabs_6" class="tab" aria-label="Tab 2" />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            Tab content 2
+          </div>
+
+          <input type="radio" name="my_tabs_6" class="tab" aria-label="Tab 3" />
+          <div class="tab-content bg-base-100 border-base-300 p-6">
+            Tab content 3
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script/calculate.js"></script>
+  </body>
+</html>
