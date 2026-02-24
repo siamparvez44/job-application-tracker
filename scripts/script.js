@@ -216,11 +216,13 @@ function deleteJob(event) {
         const position = jobCard.querySelector('.position').innerText;
 
         jobCard.remove();
-
+        
         const allCards = allJobsSection.querySelectorAll(".job-card");
         allCards.forEach(card => {
             const cardCompany = card.querySelector('.company-name').innerText;
             const cardPosition = card.querySelector('.position').innerText;
+            console.log(cardCompany, cardPosition)
+            console.log(companyName, position )
 
             if (cardCompany == companyName && cardPosition == position) {
                 card.remove();

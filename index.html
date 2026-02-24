@@ -8,24 +8,21 @@
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
 
     <style>
       * {
@@ -45,8 +42,7 @@
               <h2 class="card-title md:text-md text-sm font-normal">Total</h2>
               <p
                 id="total-job-count"
-                class="md:text-3xl sm:text-2xl text-xl font-bold"
-              >
+                class="md:text-3xl sm:text-2xl text-xl font-bold">
                 0
               </p>
             </div>
@@ -58,8 +54,7 @@
               </h2>
               <p
                 id="interview-job-count"
-                class="md:text-3xl sm:text-2xl text-xl font-bold text-green-400"
-              >
+                class="md:text-3xl sm:text-2xl text-xl font-bold text-green-400">
                 0
               </p>
             </div>
@@ -71,8 +66,7 @@
               </h2>
               <p
                 id="rejected-job-count"
-                class="md:text-3xl sm:text-2xl text-xl font-bold text-red-400"
-              >
+                class="md:text-3xl sm:text-2xl text-xl font-bold text-red-400">
                 0
               </p>
             </div>
@@ -93,44 +87,34 @@
           <button
             id="all-jobs-btn"
             onclick="toggleTabs('all-jobs-btn')"
-            class="btn btn-info min-w-16 sm:min-w-24 md:min-w-32 sm:text-base btn-sm md:btn-md text-xs font-normal text-white"
-          >
+            class="btn btn-info min-w-16 sm:min-w-24 md:min-w-32 sm:text-base btn-sm md:btn-md text-xs font-normal text-white">
             All
           </button>
           <button
             id="interview-jobs-btn"
             onclick="toggleTabs('interview-jobs-btn')"
-            class="btn min-w-16 sm:min-w-24 md:min-w-32 text-slate-500 sm:text-base btn-sm md:btn-md text-xs font-normal"
-          >
+            class="btn min-w-16 sm:min-w-24 md:min-w-32 text-slate-500 sm:text-base btn-sm md:btn-md text-xs font-normal">
             Interview
           </button>
           <button
             id="rejected-jobs-btn"
             onclick="toggleTabs('rejected-jobs-btn')"
-            class="btn min-w-16 sm:min-w-24 md:min-w-32 text-slate-500 sm:text-base btn-sm md:btn-md text-xs font-normal"
-          >
+            class="btn min-w-16 sm:min-w-24 md:min-w-32 text-slate-500 sm:text-base btn-sm md:btn-md text-xs font-normal">
             Rejected
           </button>
         </div>
 
         <section id="all-jobs" class="flex flex-col gap-4">
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  Mobile First Corp
-                </h2>
+                <h2 class="company-name text-lg font-semibold">Mobile First Corp</h2>
                 <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  React Native Developer
-                </h3>
+                  class="position md:text-base text-slate-500 text-sm font-normal">React Native Developer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -141,8 +125,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -152,35 +135,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  WebFlow Agency
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  Web Designer & Developer
-                </h3>
+                <h2 class="company-name text-lg font-semibold">WebFlow Agency</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">Web Designer & Developer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -191,8 +164,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -202,35 +174,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  DataViz Solutions
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  Data Visualization Specialist
-                </h3>
+                <h2 class="company-name text-lg font-semibold">DataViz Solutions</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">Data Visualization Specialist</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -241,8 +203,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -252,35 +213,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  CloudFirst Inc
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  Backend Developer
-                </h3>
+                <h2 class="company-name text-lg font-semibold">CloudFirst Inc</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">Backend Developer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -291,8 +242,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -302,35 +252,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  Innovation Labs
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  UI/UX Engineer
-                </h3>
+                <h2 class="company-name text-lg font-semibold">Innovation Labs</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">UI/UX Engineer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -341,8 +281,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -353,35 +292,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  MegaCorp Solutions
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  JavaScript Developer
-                </h3>
+                <h2 class="company-name text-lg font-semibold">MegaCorp Solutions</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">JavaScript Developer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -392,8 +321,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -404,33 +332,26 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
                 <h2 class="company-name text-lg font-semibold">StartupXYZ</h2>
                 <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  Full Stack Engineer
-                </h3>
+                  class="position md:text-base text-slate-500 text-sm font-normal">Full Stack Engineer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -441,8 +362,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -453,35 +373,25 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
           </div>
 
           <div
-            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded"
-          >
+            class="bg-base-100 border-base-300 job-card flex flex-col gap-4 p-6 transition-all border-l-4 rounded">
             <div class="flex justify-between">
               <div>
-                <h2 class="company-name text-lg font-semibold">
-                  TechCorp Industries
-                </h2>
-                <h3
-                  class="position md:text-base text-slate-500 text-sm font-normal"
-                >
-                  Senior Frontend Developer
-                </h3>
+                <h2 class="company-name text-lg font-semibold">TechCorp Industries</h2>
+                <h3 class="position md:text-base text-slate-500 text-sm font-normal">Senior Frontend Developer</h3>
               </div>
               <button
-                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job"
-              >
+                class="btn btn-circle btn-outline border-base-300 text-neutral-400 hover:bg-red-100 hover:text-red-300 btn-sm md:btn-md delete-job">
                 <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
@@ -492,8 +402,7 @@
             </p>
             <div class="space-y-3">
               <button
-                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border"
-              >
+                class="btn btn-soft btn-info border-info btn-sm md:btn-md job-status font-medium uppercase border">
                 Not Applied
               </button>
               <p class="description sm:text-sm text-xs">
@@ -504,13 +413,11 @@
             </div>
             <div class="flex gap-3">
               <button
-                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase"
-              >
+                class="btn btn-outline btn-success btn-sm md:btn-md interview-btn uppercase">
                 Interview
               </button>
               <button
-                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase"
-              >
+                class="btn btn-outline btn-error btn-sm md:btn-md rejected-btn uppercase">
                 Rejected
               </button>
             </div>
@@ -519,8 +426,7 @@
         <section id="filtered-jobs" class="hidden"></section>
         <section
           id="no-jobs"
-          class="bg-base-100 border-base-300 flex-col items-center justify-center hidden gap-4 px-4 py-32 rounded"
-        >
+          class="bg-base-100 border-base-300 flex-col items-center justify-center hidden gap-4 px-4 py-32 rounded">
           <img src="./assets/jobs.png" alt="Job Icon" />
           <div class="space-y-2 text-center">
             <h2 class="md:text-3xl text-2xl font-bold">No jobs available</h2>
